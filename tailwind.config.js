@@ -43,7 +43,7 @@ module.exports = {
         fontFamily: {
           sans: ["var(--font-sora)", ...fontFamily.sans],
           code: "var(--font-code)",
-          grotesk: "var(--font-grotesk)",
+          grotesk: ['Your Grotesk Font', 'sans-serif'],
         },
         letterSpacing: {
           tagline: ".15em",
@@ -119,14 +119,14 @@ module.exports = {
           "@apply text-sm": {},
         },
         ".tagline": {
-          "@apply font-grotesk font-light text-xs tracking-tagline uppercase":
+          "@apply font-light text-xs uppercase":
             {},
         },
         ".quote": {
           "@apply text-lg leading-normal": {},
         },
         ".button": {
-          "@apply text-xs font-bold uppercase tracking-wider": {},
+          "@apply text-xs font-bold uppercase": {},
         },
       });
       addUtilities({

@@ -1,5 +1,6 @@
 import { Footer } from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
 import ButtonGradient from "./img/svg/ButtonGradient";
 
 export default function App() {
@@ -7,8 +8,8 @@ export default function App() {
         <> 
           <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden" > 
             <Header/>
-            {/* <Hero/>
-            <Benefits/>
+             <Hero/>
+           {/* <Benefits/>
             <Collaboration/>
             <Services/>
             <Pricing/>
