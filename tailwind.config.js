@@ -4,7 +4,10 @@ import plugin from "tailwindcss/plugin";
 
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./pages/**/*.{js,jsx}",
+    "./componenjs/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
   ],
   theme: {
     extend: {
@@ -37,11 +40,11 @@ module.exports = {
             13: "#6C7275",
           },
         },
-        // fontFamily: {
-        //   sans: ["var(--font-sora)", ...fontFamily.sans],
-        //   code: "var(--font-code)",
-        //   grotesk: "var(--font-grotesk)",
-        // },
+        fontFamily: {
+          sans: ["var(--font-sora)", ...fontFamily.sans],
+          code: "var(--font-code)",
+          grotesk: "var(--font-grotesk)",
+        },
         letterSpacing: {
           tagline: ".15em",
         },
@@ -82,7 +85,7 @@ module.exports = {
       addBase({});
       addComponents({
         ".container": {
-          "@apply max-w-[77.5rem] mx-auto px-5 md:px-10 lg:px-15 xl:max-w-[87.5rem]":
+          "@apply max-w-[77.5rem] mx-auto px-5 md:px-10 xl:max-w-[87.5rem]":
             {},
         },
         ".h1": {

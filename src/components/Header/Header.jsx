@@ -2,11 +2,11 @@ import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
 import { useState } from "react";
-import Button from "./Button";
-import MenuSvg from '../img/svg/MenuSvg';
-import { brainwave } from "../img";
-import { Navigations } from "../constants/Navigations";
-import { HamburgerMenu } from "../constants/HamburgerMenu";
+import { brainwave } from "../../img";
+import { Navigations } from "./Navigations";
+import { HamburgerMenu } from "./HamburgerMenu";
+import MenuSvg from '../../../src/img/svg/MenuSvg';
+import Button from '../Button';
 
 const Header = () => {
   const pathname = useLocation();

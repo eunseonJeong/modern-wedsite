@@ -1,4 +1,4 @@
-import { background } from "../img";
+import { background } from "../../img";
 
 const Rings = () => {
     return (
