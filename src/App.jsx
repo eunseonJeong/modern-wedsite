@@ -1,6 +1,7 @@
 import { Footer } from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
+import Roadmap from "./components/Roadmap";
 import ButtonGradient from "./img/svg/ButtonGradient";
 
 export default function App() {
@@ -12,8 +13,8 @@ export default function App() {
            {/* <Benefits/>
             <Collaboration/>
             <Services/>
-            <Pricing/>
-            <Roadmap/> */}
+            <Pricing/>*/}
+            <Roadmap/> 
             <Footer/>
           </div>
 

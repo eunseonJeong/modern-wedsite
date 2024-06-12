@@ -10,7 +10,6 @@ module.exports = {
     "./src/**/*.{js,jsx}",
   ],
   theme: {
-    extend: {
       extend: {
         colors: {
           color: {
@@ -74,11 +73,9 @@ module.exports = {
         },
         backgroundImage: {
           "radial-gradient": "radial-gradient(var(--tw-gradient-stops))",
-          "conic-gradient":
-            "conic-gradient(from 225deg, #FFC876, #79FFF7, #9F53FF, #FF98E2, #FFC876)",
+          "conic-gradient": "conic-gradient(from 225deg, #FFC876, #79FFF7, #9F53FF, #FF98E2, #FFC876)",
         },
       },
-    },
   },
   plugins: [
     plugin(function ({ addBase, addComponents, addUtilities }) {
@@ -126,7 +123,7 @@ module.exports = {
           "@apply text-lg leading-normal": {},
         },
         ".button": {
-          "@apply text-xs font-bold uppercase": {},
+          "@apply text-black text-xs font-bold uppercase": {},
         },
       });
       addUtilities({

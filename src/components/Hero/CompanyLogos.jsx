@@ -1,4 +1,6 @@
-import { CompanyLogoIcons } from "./HeroIcons";
+import {yourlogo} from '../../img';
+
+const companyLogo = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 
 export const CompanyLogos = ({ className }) => {
   return (
@@ -7,7 +9,7 @@ export const CompanyLogos = ({ className }) => {
         Helping people create beautiful content at
       </h5>
       <ul className="flex">
-        {CompanyLogoIcons.map((logo, index) => (
+        {companyLogo.map((logo, index) => (
           <li
             className="flex items-center justify-center flex-1 h-[8.5rem]"
             key={index}
