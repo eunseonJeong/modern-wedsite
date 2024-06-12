@@ -37,11 +37,11 @@ module.exports = {
             13: "#6C7275",
           },
         },
-        fontFamily: {
-          sans: ["var(--font-sora)", ...fontFamily.sans],
-          code: "var(--font-code)",
-          grotesk: "var(--font-grotesk)",
-        },
+        // fontFamily: {
+        //   sans: ["var(--font-sora)", ...fontFamily.sans],
+        //   code: "var(--font-code)",
+        //   grotesk: "var(--font-grotesk)",
+        // },
         letterSpacing: {
           tagline: ".15em",
         },
@@ -120,10 +120,10 @@ module.exports = {
             {},
         },
         ".quote": {
-          "@apply font-code text-lg leading-normal": {},
+          "@apply text-lg leading-normal": {},
         },
         ".button": {
-          "@apply font-code text-xs font-bold uppercase tracking-wider": {},
+          "@apply text-xs font-bold uppercase tracking-wider": {},
         },
       });
       addUtilities({

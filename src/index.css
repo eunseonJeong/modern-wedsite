@@ -6,6 +6,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+
 :root {
   --font-sora: "Sora", sans-serif;
   --font-code: "Source Code Pro", monospace;
