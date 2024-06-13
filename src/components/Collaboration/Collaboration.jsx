@@ -1,7 +1,7 @@
 import { brainwaveSymbol, check, curve1, curve2 } from "../../img";
 import Button from "../Button";
 import { Section } from "../Section";
-import { collabApps, collabContent, collabText } from "./CollabContent";
+import { collabApps, collabContent, collabText } from "./CollabList";
 
 export const Collaboration = () => {
     return (
