@@ -10,7 +10,6 @@ import { BottomLine } from './BottomLine';
 import { curve, heroBackground, robot } from '../../img';
 import Notification from './Notification';
 
-//메인 페이지
 const Hero = () => {
   const parallaxRef = useRef(null);
 

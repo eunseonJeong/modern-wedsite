@@ -1,3 +1,4 @@
+import Benefits from "./components/Benefits/Benefits";
 import { Footer } from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
@@ -10,8 +11,8 @@ export default function App() {
           <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden" > 
             <Header/>
              <Hero/>
-           {/* <Benefits/>
-            <Collaboration/>
+            <Benefits/>
+            {/*  <Collaboration/>
             <Services/>
             <Pricing/>*/}
             <Roadmap/> 
