@@ -1,5 +1,5 @@
 import { roadmap1, roadmap2, roadmap3, roadmap4 } from "../img";
-
+//경력 및 프로젝트 작성
 export const roadmapList = [
     {
       id: "0",
@@ -8,7 +8,7 @@ export const roadmapList = [
       date: "May 2023",
       status: "done",
       imageUrl: roadmap1,
-      colorful: true,
+      colorful: true, //테두리
     },
     {
       id: "1",

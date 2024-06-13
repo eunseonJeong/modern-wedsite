@@ -3,7 +3,6 @@ import Heading from './Heading';
 import { roadmapList } from "./RoadmapList";
 import { check2, grid, loading1 } from "../img";
 import Button from "./Button";
-import { Gradient } from "./Hero/Gradient";
 import TagLine from "./TagLine";
 
 const Roadmap = () => (
@@ -23,6 +22,7 @@ const Roadmap = () => (
               key={item.id}
             >
               <div className="relative p-8 bg-n-8 rounded-[2.4375rem] overflow-hidden xl:p-15">
+                 {/* 배경화면 그리드 */}
                 <div className="absolute top-0 left-0 max-w-full">
                   <img
                     className="w-full"
@@ -35,7 +35,7 @@ const Roadmap = () => (
                 <div className="relative z-1">
                   <div className="flex items-center justify-between max-w-[27rem] mb-8 md:mb-20">
                     <TagLine>{item.date}</TagLine>
-
+                    {/* 프로젝트 상태 */}
                     <div className="flex items-center px-4 py-1 bg-n-1 rounded text-n-8">
                       <img
                         className="mr-2.5"
@@ -47,7 +47,7 @@ const Roadmap = () => (
                       <div className="tagline">{status}</div>
                     </div>
                   </div>
-
+                  {/* 프로젝트 이미지 */}
                   <div className="mb-10 -my-10 -mx-15">
                     <img
                       className="w-full"
@@ -64,8 +64,9 @@ const Roadmap = () => (
             </div>
           );
         })}
-
-        <Gradient />
+      {/* 박스 밑 그라이언트 */}
+        <div className="relative z-1 h-6 mx-2.5 bg-n-11 shadow-xl rounded-b-[1.25rem] lg:h-6 lg:mx-8" />
+        <div className="relative top-28 z-1 h-6 mx-6 bg-n-11/70 shadow-xl rounded-b-[1.25rem] lg:h-6 lg:mx-22" />
       </div>
 
       <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">

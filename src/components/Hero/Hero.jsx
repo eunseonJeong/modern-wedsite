@@ -2,17 +2,17 @@ import React, { useRef } from 'react'
 import { Section } from '../Section';
 import Button from '../Button';
 import { Generating } from './Generating';
-import { HeroIcon, HeroIcons } from './HeroIcons';
+import { HeroIcon } from './HeroIcons';
 import { ScrollParallax } from 'react-just-parallax';
-import { Gradient } from './Gradient';
 import { CompanyLogos } from './CompanyLogos';
 import { BackgroundCircles } from './BackgroundCircles';
 import { BottomLine } from './BottomLine';
 import { curve, heroBackground, robot } from '../../img';
 import Notification from './Notification';
 
+//메인 페이지
 const Hero = () => {
-    const parallaxRef = useRef(null);
+  const parallaxRef = useRef(null);
 
   return (
     <Section
@@ -45,7 +45,7 @@ const Hero = () => {
           Get started
         </Button>
       </div>
-      {/* 로봇 이미지 */}
+      {/* 메인 이미지 */}
       <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
         <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
             <div className="relative bg-n-8 rounded-[1rem]">
@@ -58,7 +58,6 @@ const Hero = () => {
                   height={490}
                   alt="AI"
                 />
-
               <Generating className="absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2" />
             {/* 프로필 띄워주기 */}
               <ScrollParallax isAbsolutelyPositioned>
@@ -74,7 +73,9 @@ const Hero = () => {
             </div>
           </div>
 
-          <Gradient />
+           {/* 박스 밑 그라이언트 */}
+          <div className="relative z-1 h-6 mx-2.5 bg-n-11 shadow-xl rounded-b-[1.25rem] lg:h-6 lg:mx-8" />
+          <div className="relative z-1 h-6 mx-6 bg-n-11/70 shadow-xl rounded-b-[1.25rem] lg:h-6 lg:mx-20" />
         </div>
         {/* 배경 */}
         <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
@@ -86,11 +87,11 @@ const Hero = () => {
             alt="hero"
           />
         </div>
-
+        {/* 배경 아이콘 */}
         <BackgroundCircles />
       </div>
-
-      <CompanyLogos className="hidden relative z-10 mt-20 lg:block" />
+        {/* 로고 아이콘 */}
+      {/* <CompanyLogos className="hidden relative z-10 mt-20 lg:block" /> */}
     </div>
 
     <BottomLine />
