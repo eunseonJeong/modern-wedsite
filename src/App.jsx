@@ -1,4 +1,5 @@
 import Benefits from "./components/Benefits/Benefits";
+import {Collaboration} from "./components/Collaboration/Collaboration";
 import { Footer } from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
@@ -12,8 +13,8 @@ export default function App() {
             <Header/>
              <Hero/>
             <Benefits/>
-            {/*  <Collaboration/>
-            <Services/>
+            <Collaboration/>
+            {/*  <Services/>
             <Pricing/>*/}
             <Roadmap/> 
             <Footer/>
