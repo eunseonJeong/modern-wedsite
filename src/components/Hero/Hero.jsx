@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import { Section } from '../Section';
 import Button from '../Button';
-import { Generating } from './Generating';
+import { Generating } from '../Generating';
 import { HeroIcon } from './HeroIcons';
 import { ScrollParallax } from 'react-just-parallax';
 import { CompanyLogos } from './CompanyLogos';

@@ -1,4 +1,4 @@
-export const Navigations = [
+export const navigations = [
   {
     id: "0",
     title: "Features",

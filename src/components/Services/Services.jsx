@@ -2,7 +2,7 @@ import React from 'react'
 import { Section } from '../Section'
 import Heading from '../Heading'
 import { check, gradient, service1, service2, service3 } from '../../img'
-import { Generating } from '../Hero/Generating'
+import { Generating } from '../Generating'
 import { ChatBubbleWing, brainwaveServices, brainwaveServicesIcons } from './ServicesList'
 import { Video } from './Video'
 

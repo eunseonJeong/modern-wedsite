@@ -1,6 +1,6 @@
 import { discordBlack, facebook, instagram, telegram, twitter } from "../../img";
 
-export const Socials = [
+export const socials = [
     {
       id: "0",
       title: "Discord",

@@ -1,5 +1,5 @@
 import React from "react";
-import { Socials } from "./Socials";
+import { socials } from "./FooterData";
 import { Section } from "../Section";
 
 export const Footer = () => {
@@ -11,7 +11,7 @@ export const Footer = () => {
         </p>
 
         <ul className="flex gap-5 flex-wrap">
-          {Socials.map((item) => (
+          {socials.map((item) => (
             <a
               key={item.id}
               href={item.url}
