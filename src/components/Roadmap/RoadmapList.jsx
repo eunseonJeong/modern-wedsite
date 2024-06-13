@@ -1,4 +1,4 @@
-import { roadmap1, roadmap2, roadmap3, roadmap4 } from "../img";
+import { roadmap1, roadmap2, roadmap3, roadmap4 } from "../../img";
 //경력 및 프로젝트 작성
 export const roadmapList = [
     {
