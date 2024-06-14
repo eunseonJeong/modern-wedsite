@@ -1,21 +1,31 @@
-import { discord, figma, framer, notion, photoshop, protopie, raindrop, slack } from "../../img";
+import { figma, notion, slack } from "../../img";
+import React from '../../img/react-icon.svg';
+import Github  from '../../img/github-icon.svg';
+import Nextjs from '../../img/nextjs-icon.svg';
+import Jenkins from '../../img/jenkins-icon.svg';
+import Typescript from '../../img/typescript-icon.svg';
+import Docker from '../../img/docker-icon.svg';
 
-export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+export const collabText = {
+    title: "Skill",
+    work: "업무 스킬",
+    develop: "123",
+  }
+
 
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
-    text: collabText,
+    title: "Work Skills",
+    text: collabText.work,
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "Development Skills",
   },
   {
     id: "2",
-    title: "Top-notch Security",
+    title: "Skills",
   },
 ];
 
@@ -37,43 +47,43 @@ export const collabApps = [
     },
     {
       id: "2",
-      title: "Discord",
-      icon: discord,
-      width: 36,
-      height: 28,
+      title: "Github",
+      icon: Github,
+      width: 38,
+      height: 32,
     },
     {
       id: "3",
-      title: "Slack",
-      icon: slack,
+      title: "Docker",
+      icon: Docker,
       width: 34,
-      height: 35,
+      height: 34,
     },
     {
       id: "4",
-      title: "Photoshop",
-      icon: photoshop,
+      title: "Jenkins",
+      icon: Jenkins,
       width: 34,
       height: 34,
     },
     {
       id: "5",
-      title: "Protopie",
-      icon: protopie,
+      title: "Typescript",
+      icon: Typescript,
       width: 34,
-      height: 34,
+      height: 35,
     },
     {
       id: "6",
-      title: "Framer",
-      icon: framer,
-      width: 26,
-      height: 34,
+      title: "Nextjs",
+      icon: Nextjs,
+      width: 38,
+      height: 32,
     },
     {
       id: "7",
-      title: "Raindrop",
-      icon: raindrop,
+      title: "React",
+      icon: React,
       width: 38,
       height: 32,
     },

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Section } from '../Section'
 import Heading from '../Heading'
-import { benefitIcon1, benefitIcon2, benefitIcon3, benefitIcon4, benefitImage2 } from '../../img'
+import { benefitIcon1, benefitIcon2, benefitIcon3, benefitImage2 } from '../../img'
 import { Arrow } from './Arrow';
 import { ClipPath } from './ClipPath';
 import { GradientLight } from './GradientLight'
@@ -12,7 +12,7 @@ const Benefits = () => {
     <div className="container relative z-2">
       <Heading
         className="md:max-w-md lg:max-w-2xl"
-        title="Chat Smarter, Not Harder with Brainwave"
+        title="About"
       />
 
       <div className="flex flex-wrap gap-10 mb-10">
@@ -74,16 +74,17 @@ export default Benefits
 const benefits = [
     {
       id: "0",
-      title: "Ask anything",
-      text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+      title: "NAME",
+      text: "정은선(Jeong Eun Seon) 정은선(Jeong Eun Seon) 정은선(Jeong Eun Seon) 정은선(Jeong Eun Seon)",
       backgroundUrl: "./src/assets/benefits/card-1.svg",
       iconUrl: benefitIcon1,
       imageUrl: benefitImage2,
+      light: true,
     },
     {
       id: "1",
-      title: "Improve everyday",
-      text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+      title: "PHONE",
+      text: "010.7605.7605 010.7605.7605 010.7605.7605 010.7605.7605 010.7605.7605 010.7605.7605",
       backgroundUrl: "./src/assets/benefits/card-2.svg",
       iconUrl: benefitIcon2,
       imageUrl: benefitImage2,
@@ -91,10 +92,11 @@ const benefits = [
     },
     {
       id: "2",
-      title: "Connect everywhere",
-      text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+      title: "EMAIL",
+      text: "suni@gamil.com suni@gamil.com suni@gamil.com suni@gamil.com suni@gamil.com",
       backgroundUrl: "../../img/benefits/card-3.svg",
       iconUrl: benefitIcon3,
       imageUrl: benefitImage2,
+      light: true,
     },
   ];
