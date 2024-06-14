@@ -1,4 +1,5 @@
 import { brainwaveSymbol, check, curve1, curve2 } from "../../img";
+import { BackgroundGradient } from "../../utils/ui/background-gradient";
 import Button from "../Button";
 import { Section } from "../Section";
 import { collabApps, collabContent, collabText } from "./CollabData";

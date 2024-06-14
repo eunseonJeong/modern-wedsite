@@ -3,7 +3,7 @@ import { roadmap1, roadmap2, roadmap3, roadmap4 } from "../../img";
 export const roadmapList = [
     {
       id: "0",
-      title: "Voice recognition",
+      title: "SNAPPI",
       text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
       date: "May 2023",
       status: "done",
@@ -12,7 +12,7 @@ export const roadmapList = [
     },
     {
       id: "1",
-      title: "Gamification",
+      title: "CLIVE WORKS",
       text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
       date: "May 2023",
       status: "progress",
@@ -20,7 +20,7 @@ export const roadmapList = [
     },
     {
       id: "2",
-      title: "Chatbot customization",
+      title: "HRS",
       text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
       date: "May 2023",
       status: "done",

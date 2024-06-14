@@ -1,4 +1,5 @@
 import { check2, grid, loading1 } from "../../img";
+import { WobbleCard } from "../../utils/ui/wobble-card";
 import Button from "../Button";
 import Heading from "../Heading";
 import { Section } from "../Section";
@@ -7,73 +8,57 @@ import { roadmapList } from "./RoadmapList";
 
 const Roadmap = () => (
   <Section className="overflow-hidden" id="roadmap">
-    <div className="container md:pb-10">
-      <Heading tag="Ready to get started" title="Project" />
+  <div className="container md:pb-10">
+    <Heading tag="Ready to get started" title="Project" />
 
-      <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
-        {roadmapList.map((item) => {
-          const status = item.status === "done" ? "Done" : "In progress";
+    <div className="relative grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-4 md:pb-[7rem]">
+      {roadmapList.map((item) => {
+        const status = item.status === "done" ? "Done" : "In progress";
 
-          return (
-            <div
-              className={`md:flex even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem] ${
-                item.colorful ? "bg-conic-gradient" : "bg-n-6"
-              }`}
-              key={item.id}
-            >
-              <div className="relative p-8 bg-n-8 rounded-[2.4375rem] overflow-hidden xl:p-15">
-                 {/* 배경화면 그리드 */}
-                <div className="absolute top-0 left-0 max-w-full">
+        return (
+          <WobbleCard
+            containerClassName="h-full min-h-[500px] md:min-h-[300px]"
+            className="rounded-2xl py-8"
+            key={item.id}
+          >
+            <div className="relative p-8 bg-n-8 rounded-2xl overflow-hidden xl:p-15">
+              <div className="relative z-1">
+                <div className="flex items-center justify-between max-w-[27rem] mb-8 md:mb-20">
+                  <TagLine>{item.date}</TagLine>
+                  <div className="flex items-center px-4 py-1 bg-n-1 rounded text-n-8">
+                    <img
+                      className="mr-2.5"
+                      src={item.status === "done" ? check2 : loading1}
+                      width={16}
+                      height={16}
+                      alt={status}
+                    />
+                    <div className="tagline">{status}</div>
+                  </div>
+                </div>
+                <div className="mb-10 -my-10 -mx-15">
                   <img
                     className="w-full"
-                    src={grid}
-                    width={550}
-                    height={550}
-                    alt="Grid"
+                    src={item.imageUrl}
+                    width={628}
+                    height={426}
+                    alt={item.title}
                   />
                 </div>
-                <div className="relative z-1">
-                  <div className="flex items-center justify-between max-w-[27rem] mb-8 md:mb-20">
-                    <TagLine>{item.date}</TagLine>
-                    {/* 프로젝트 상태 */}
-                    <div className="flex items-center px-4 py-1 bg-n-1 rounded text-n-8">
-                      <img
-                        className="mr-2.5"
-                        src={item.status === "done" ? check2 : loading1}
-                        width={16}
-                        height={16}
-                        alt={status}
-                      />
-                      <div className="tagline">{status}</div>
-                    </div>
-                  </div>
-                  {/* 프로젝트 이미지 */}
-                  <div className="mb-10 -my-10 -mx-15">
-                    <img
-                      className="w-full"
-                      src={item.imageUrl}
-                      width={628}
-                      height={426}
-                      alt={item.title}
-                    />
-                  </div>
-                  <h4 className="h4 mb-4">{item.title}</h4>
-                  <p className="body-2 text-n-4">{item.text}</p>
-                </div>
+                <h4 className="h4 mb-4">{item.title}</h4>
+                <p className="body-2 text-n-4">{item.text}</p>
               </div>
             </div>
-          );
-        })}
-      {/* 박스 밑 그라이언트 */}
-        <div className="relative z-1 h-6 mx-2.5 bg-n-11 shadow-xl rounded-b-[1.25rem] lg:h-6 lg:mx-8" />
-        <div className="relative top-28 z-1 h-6 mx-6 bg-n-11/70 shadow-xl rounded-b-[1.25rem] lg:h-6 lg:mx-22" />
-      </div>
-
-      <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
-        <Button href="/roadmap">TOP</Button>
-      </div>
+          </WobbleCard>
+        );
+      })}
     </div>
-  </Section>
+
+    <div className="flex justify-center">
+      <Button href="/roadmap">TOP</Button>
+    </div>
+  </div>
+</Section>
 );
 
 export default Roadmap;
