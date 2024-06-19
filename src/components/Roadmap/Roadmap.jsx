@@ -1,4 +1,4 @@
-import { check2, grid, loading1 } from "../../img";
+import { check2, loading1 } from "../../img";
 import { WobbleCard } from "../../utils/ui/wobble-card";
 import Button from "../Button";
 import Heading from "../Heading";
